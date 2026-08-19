@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BlogSpace — Full-Stack Blogging Platform (PostgreSQL edition)
 
 A complete, working blogging platform built with vanilla HTML/CSS/JavaScript on the
@@ -242,3 +243,6 @@ _Add screenshots here after running the project locally:_
 - **SQL injection protection**: Every query uses parameterized placeholders (`$1`, `$2`, …) instead of string concatenation, so user input can never be interpreted as SQL code.
 - **Error handling**: Every API call is wrapped in try/catch; the controller distinguishes between validation errors (400), not-found errors (404), and server errors (500).
 - **Deployment simplicity**: `server.js` serves the `frontend/` folder as static files, so one Render service hosts everything — no CORS issues between separate frontend/backend deployments.
+=======
+# Blogging-platform
+>>>>>>> 79c83bc7cb04f3fc3b888a300ec3913852e878a6
