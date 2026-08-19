@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">BlogSpace — Post</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">Blog<span>Space</span></a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="create.html">Create Post</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a href="index.html" class="back-link">&larr; Back to blogs</a>
+
+    <div id="loadingState" class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading post…</p>
+    </div>
+
+    <div id="errorState" class="empty-state" hidden>
+      <div class="empty-stamp">!</div>
+      <h3>Post not found</h3>
+      <p>This post may have been deleted or the link is incorrect.</p>
+      <a href="index.html" class="btn btn-primary">Back to blogs</a>
+    </div>
+
+    <article class="post-article" id="postArticle" hidden>
+      <span class="category-stamp" id="postCategory"></span>
+      <h1 id="postTitle"></h1>
+      <div class="post-meta">
+        <span id="postAuthor"></span>
+        <span class="dot">&middot;</span>
+        <span id="postDate"></span>
+      </div>
+      <img id="postImage" class="post-hero-img" alt="" />
+      <div class="post-content" id="postContent"></div>
+
+      <a href="index.html" class="back-link back-link-bottom">&larr; Back to blogs</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+            <div class="logo">
+                Story<span>Spark</span>
+            </div>
+
+            <p>
+                Stories, ideas, and perspectives worth sharing.
+            </p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 StorySpark. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+  <script src="js/post.js"></script>
+</body>
+</html>
